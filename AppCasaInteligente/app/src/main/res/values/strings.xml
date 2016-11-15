@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Casa inteligente</string>
+    <string name="action_settings">Settings</string>
+    <string name="casainteligente">Casa inteligente</string>
+    <string name="cocina">Cocina</string>
+    <string name="living">Living</string>
+    <string name="dormitorio">Dormitorio</string>
+    <string name="descanso">Descanso</string>
+    <string name="encender">Encender</string>
+    <string name="apagar">Apagar</string>
+    <string name="ventana">Agite para abrir/cerrar la ventana</string>
+    <string name="imgmicrofono">imgMicrofono</string>
+</resources>

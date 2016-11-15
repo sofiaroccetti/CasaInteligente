@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rodri.appcasainteligente.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="@string/encender"
+        android:id="@+id/btnEncenderCocina"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/txtCocina"
+        android:layout_toLeftOf="@+id/txtLiving"
+        android:layout_toStartOf="@+id/txtLiving"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="@string/apagar"
+        android:id="@+id/btnApagarCocina"
+        android:layout_alignTop="@+id/btnEncenderCocina"
+        android:layout_alignLeft="@+id/btnApagarLiving"
+        android:layout_alignStart="@+id/btnApagarLiving"
+        android:background="@color/design_textinput_error_color_dark" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="@string/encender"
+        android:id="@+id/btnEncenderLiving"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/txtLiving"
+        android:layout_alignLeft="@+id/btnEncenderCocina"
+        android:layout_alignStart="@+id/btnEncenderCocina"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="@string/apagar"
+        android:id="@+id/btnApagarLiving"
+        android:layout_alignTop="@+id/btnEncenderLiving"
+        android:layout_toRightOf="@+id/txtCocina"
+        android:layout_toEndOf="@+id/txtCocina"
+        android:background="@color/design_textinput_error_color_dark"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="@string/encender"
+        android:id="@+id/btnEncenderDormitorio"
+        android:layout_below="@+id/txtDormitorio"
+        android:layout_toLeftOf="@+id/txtCocina"
+        android:layout_toStartOf="@+id/txtCocina"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_light" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="@string/apagar"
+        android:id="@+id/btnApagarDormitorio"
+        android:layout_alignTop="@+id/btnEncenderDormitorio"
+        android:layout_alignLeft="@+id/btnApagarLiving"
+        android:layout_alignStart="@+id/btnApagarLiving"
+        android:background="@color/design_textinput_error_color_dark" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="@string/encender"
+        android:id="@+id/btnEncenderDescanso"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/txtDescanso"
+        android:layout_alignLeft="@+id/btnEncenderDormitorio"
+        android:layout_alignStart="@+id/btnEncenderDormitorio"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="@string/apagar"
+        android:id="@+id/btnApagarDescanso"
+        android:layout_alignTop="@+id/btnEncenderDescanso"
+        android:layout_alignLeft="@+id/btnApagarDormitorio"
+        android:layout_alignStart="@+id/btnApagarDormitorio"
+        android:background="@color/design_textinput_error_color_dark" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/imgMicrofono"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/txtVentana"
+        android:src="@android:drawable/ic_btn_speak_now"
+        android:contentDescription="@string/imgmicrofono"
+        android:layout_toRightOf="@+id/txtVentana"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/ventana"
+        android:id="@+id/txtVentana"
+        android:layout_above="@+id/imgMicrofono"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/cocina"
+        android:id="@+id/txtCocina"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/living"
+        android:id="@+id/txtLiving"
+        android:layout_below="@+id/btnEncenderCocina"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dormitorio"
+        android:id="@+id/txtDormitorio"
+        android:layout_below="@+id/btnEncenderLiving"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/descanso"
+        android:id="@+id/txtDescanso"
+        android:layout_below="@+id/btnEncenderDormitorio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txtMicrofono"
+        android:layout_alignBottom="@+id/imgMicrofono"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>
